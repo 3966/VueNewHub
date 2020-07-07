@@ -1,0 +1,442 @@
+.btn-zdy{
+    display: inline-block;
+    width: 100%;
+    padding:5 10px;
+    background-color: #f68e31;
+    color: #ffffff;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.btn-zdy:hover{
+    color: #ffffff;
+    background-color: #ff9231;
+}
+
+.group-campaign,.urls{
+    padding: 16px;
+    background: #F2F2F2;
+    margin: 10px 0px;
+    cursor: pointer;
+    color: #737373;
+    font-size: 1.1vw;
+    width: 100%;
+}
+.urls{
+    background-color: #FFF;
+}
+.del_url{
+    display: none;
+}
+.urlsBox > div:hover .del_url{
+    display: block;
+}
+.group-campaign-title,.urls-title{
+    font-size: 1.1vw;
+    margin-bottom: 5px;
+}
+
+.group-campaign-box,.urls-box{
+    padding:10px;
+    /*border:thin solid #737373;*/
+  
+}
+.global_title{
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+.group2{
+    position: relative;
+    padding: 10px;
+    margin: 10px 0px;
+    background: #ffffff;
+    cursor: pointer;
+    color: #737373;
+    font-size: 0.9vw;
+    border:thin solid #9c7d7d;
+}
+.group2-check-bind{
+    box-shadow: 0 0 10px #67dcff;
+    border-color:#67dcff;
+
+}
+.group2-check-bind:hover{
+    box-shadow: 0 0 10px #fca252;
+    border-color:#fca252;
+}
+
+.group2-title{
+    background: #ffffff;
+    cursor: pointer;
+    color: #f68e31;
+    font-size: 0.9vw;
+}
+.group2-box{
+    min-height: 200px;
+    padding-top:15px;
+
+}
+.add_icon{
+    transition: all .3s ease;
+    width: 35px;
+}
+.add_icon:hover{
+    transform: rotate(180deg);
+}
+.row{
+    margin-bottom: 10px;
+}
+.hook{
+    width: 5px;
+    height: 30px;
+    background: #f68e31;
+    position: absolute;
+    right: 10px;
+    border-radius: 50px;
+    z-index: 900;
+    display: none;
+}
+.master{
+    display: none;
+}
+.cancel_bind_node{
+    display: none;
+}
+.tab-content textarea{
+    resize: auto;
+}
+ #upForm{
+    display: none;
+}
+.omit{
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.emailGroup,.PrimaryGroup{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    left:0;
+    top:0;
+    z-index: 1000;
+}
+.emailGroup.active,.PrimaryGroup.active,.templateGroup.active{
+    display: block;
+}
+.emailList,.PrimaryList{
+    padding:25px;
+    border-radius: 16px;
+    position: fixed;
+    width: 900px;
+    background-color: #ffffff;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1001;
+    max-height: 500px;
+    overflow: auto;
+}
+/*滚动条美化*/
+.emailList::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width : 0.05rem;  /*高宽分别对应横竖滚动条的尺寸*/
+      height: 0.01rem;
+}
+.emailList::-webkit-scrollbar-thumb {
+       /*滚动条里面小方块*/
+      border-radius: 0.05rem;
+      box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background   : #999;
+}
+.emailList::-webkit-scrollbar-track  {
+     /*滚动条里面轨道*/
+     box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+     border-radius: 10px;
+     background   : #ededed;
+}
+.emailList .warp{
+    position: relative;
+    cursor: pointer;
+    height: 144px;
+    padding:0;
+    margin-right: 10px;
+    margin-bottom: 46px;
+}
+.emailList .item:hover  .choose{
+    display: block;
+    background-color: #f68e31;
+    color: #ffffff;
+}
+.group-campaign-title:hover{
+    opacity: 0.8;
+}
+.group-campaign-box{
+   transition: all .5s linear;
+}
+.group-campaign-box{
+    animation: box .5s linear; 
+    /* transition: all .5s linear; */
+}
+.col-sm-3.btn.active{
+ background-color:#f68e31 !important;
+}
+.col-sm-3.btn{
+    background-color: #f5f5f5;
+    max-width: 20%;
+    margin-left: 4%;
+}   
+ .row .col-sm-3.text-center{
+    position: relative;
+    max-width: 20% !important;
+    min-width: 20% !important;
+}
+.templateGroup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.templateList {
+    padding: 25px;
+    border-radius: 16px;
+    position: fixed;
+    width: 900px;
+    background-color: #ffffff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.template_slide {
+    box-shadow: 0 0 5px #ccc;
+}
+
+/*滚动条美化*/
+.templateList::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0.05rem;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0.01rem;
+}
+
+.templateList::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 0.05rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #999;
+}
+
+.templateList::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}
+
+.templateList .warp {
+    position: relative;
+    cursor: pointer;
+    height: 144px;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 46px;
+}
+
+.templateList .item:hover .choose {
+    display: block;
+    background-color: #f68e31;
+    color: #ffffff;
+}
+
+.templateList .item:hover .hit {
+    opacity: 1;
+}
+
+.templateList .item:hover .filter {
+    filter: none;
+}
+
+.templateList .item .filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(50%) blur(1px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.templateList .item .hit {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    padding: 5px 0px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.22);
+    transition: all 0.4s ease;
+}
+
+.templateList .item .choose {
+    display: none;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 22px;
+    color: #737373;
+    background-color: #F2F2F2;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -36px;
+}
+
+.templateList .item .active {
+    background-color: #f68e31;
+    color: #fff;
+}
+
+.templateList .item .activeFilter {
+    filter: none;
+}
+
+.emailList .item .filter{
+    position: absolute;
+    left: 0;
+    top:0;
+    /*filter: grayscale(50%) blur(1px);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.emailList .item .hit{
+    position: absolute;
+    bottom: 0;
+    /*opacity: 0;*/
+    width: 100%;
+    padding:5px 0px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background:rgba(0,0,0,0.22); 
+    transition: all 0.4s ease;
+}
+
+.emailList .item .choose{
+    display: none;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 22px;
+    color: #737373;
+    background-color: #F2F2F2;
+    border-bottom-right-radius:4px; 
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom:-36px;
+}
+.emailList .item .active{
+    background-color: #f68e31;
+    color: #fff;
+}
+.emailList .item .activeFilter{
+    filter: none;
+}
+.emailList >.row{
+    display: none;
+}
+.btn_active{
+    background-color: #f68e31;
+    color: #fff;
+}
+.email_list{
+    width:100%;
+}
+.btn1{
+    display: inline-block;
+    width: 180px;
+    height: 144px;
+    line-height: 144px;
+    text-align: center;
+    /*border: thin solid #ff5e00;*/
+    color: #f68e31;
+    border-radius: 16px;
+}
+  .add2 img{
+    width: 30px;
+    transition: all .3s ease;
+  }
+  .add2:hover img{
+    transform: rotate(180deg);
+  }
+  @keyframes box{
+     0%{
+         height: 0%;
+         opacity: 0;
+
+     }
+     10%{
+        height: 10%;
+        opacity: 0.1;
+
+     }
+     20%{
+       height: 20%;
+       opacity: 0.2;
+     }
+     30%{
+       height: 30%;
+       opacity: 0.2;
+     }
+     40%{
+      height: 40%;
+      opacity: 0.4;
+     }
+     50%{
+      height: 50%;
+      opacity: 0.5;
+     }
+     60%{
+       height: 60%;
+       opacity: 0.6;
+     }
+     70%{
+       height: 70%;
+       opacity: 0.7;
+     }
+     80%{
+      height: 80%;
+      opacity: 0.8;
+     }
+     90%{
+      height: 90%;
+      opacity: 0.9;
+
+     }
+     100%{
+         height:100%;
+         opacity: 1;
+    }
+  }

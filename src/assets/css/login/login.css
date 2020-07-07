@@ -1,0 +1,129 @@
+body{
+    background: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+
+}
+.center{
+    width: 90%;
+    max-width: 600px;
+    margin:0 auto;
+    padding-top: 15%;
+    position: relative;
+}
+.text{
+    width: 71%;
+    background: #ffffff;
+    padding:15px;
+    margin-left: 29%;
+}
+.red{
+    color:#CC2030;
+
+}
+
+.modal-dialog{
+height: 100%;
+width: 100%;
+position: fixed;
+left: 0;
+top: 0;
+background-color:rgba(0, 0, 0, 0.5);
+
+}
+.modal-content{
+margin: 10% auto;
+width: 30%;
+background-color: #fff;
+padding: 30px 10px 20px 10px;
+position: relative;
+}
+.modal-P{
+ padding:10px;
+}
+button.btn.btn-primary.send_email{
+     font-size: 16px;
+     float: inherit;
+     color:#fff;
+     background-color:rgb(78,110,242);
+}
+.btn-default{
+       font-size: 16px;
+
+}
+.btn-default:hover{
+   color:#fff;
+   background-color: #999;
+}
+.modal-header{
+border-bottom: 1px solid #999;
+}
+.btn_btn,#modal{
+cursor: pointer;
+}
+
+button{
+    background: #FFFFFF;
+    color:#666666;
+    padding:5px 20px;
+    border:1px solid #666666;
+    float: right;
+    outline:none;
+    cursor: pointer;
+}
+td{
+    padding:10px 10px;
+}
+input{
+    width: 100%;
+    color:#666666;
+    border:none;
+    padding:5px;
+    outline: none;
+    border-bottom: 1px solid #333;
+    font-size: 20px;
+}
+button.close {
+    border: none;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    }
+button.close:hover{
+      color: red;
+} 
+
+@media (max-width: 700px) {
+    .text{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .wp_100{
+        width: 100%!important;
+
+    }
+
+}
+@media (max-width: 670px) {
+    .head_title{
+        font-size: 11vw !important;
+        text-align: right;
+    }
+    .head_title_small{
+        font-size: 5vw !important;
+    }
+    .hid{
+        font-size: 22px !important;
+        letter-spacing: 1px !important;
+    }
+}
